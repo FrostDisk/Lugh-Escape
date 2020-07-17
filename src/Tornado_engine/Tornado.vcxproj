@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Tornado_engine</ProjectName>
+    <ProjectGuid>{EC9A21E9-18DC-4636-8998-471432802F53}</ProjectGuid>
+    <RootNamespace>Tornado_engine</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Bin\$(Configuration)\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkDelaySign>false</LinkDelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Bin\$(Configuration)\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>.obj\$(Configuration)\BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>Include;..\Irrlicht\include;$(AUDIERE_HOME)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;irrlicht_d.lib;audiere.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Tornado_d.dll</OutputFile>
+      <Version>0.5.6</Version>
+      <AdditionalLibraryDirectories>..\Irrlicht\lib\Win32-visualstudio;$(AUDIERE_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug />
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <FixedBaseAddress />
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)Tornado_d.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /V /Y "$(TargetPath)" "$(SolutionDir)Binaries"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <BuildLog>
+      <Path>.obj\$(Configuration)\BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>Include;..\Irrlicht\include;$(AUDIERE_HOME)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;irrlicht.lib;audiere.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Tornado.dll</OutputFile>
+      <Version>0.5.6</Version>
+      <AdditionalLibraryDirectories>..\Irrlicht\lib\Win32-visualstudio;$(AUDIERE_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>NotSet</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <FixedBaseAddress />
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)Tornado.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /V /Y "$(TargetPath)" "$(SolutionDir)Binaries"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="CHANGELOG.txt" />
+    <Text Include="CREDITS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tornado.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tornado.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\CAudio.h" />
+    <ClInclude Include="Include\CAudioManager.h" />
+    <ClInclude Include="Include\CClock.h" />
+    <ClInclude Include="Include\CConfig.h" />
+    <ClInclude Include="Include\CContext.h" />
+    <ClInclude Include="Include\CEffects.h" />
+    <ClInclude Include="Include\CErrorContext.h" />
+    <ClInclude Include="Include\CEventReceiver.h" />
+    <ClInclude Include="Include\CGame.h" />
+    <ClInclude Include="Include\CGUIEnvironment.h" />
+    <ClInclude Include="Include\CMachine.h" />
+    <ClInclude Include="Include\CMath.h" />
+    <ClInclude Include="Include\Constants.h" />
+    <ClInclude Include="Include\COutput.h" />
+    <ClInclude Include="Include\CSceneManager.h" />
+    <ClInclude Include="Include\CScrollParallaxNode.h" />
+    <ClInclude Include="Include\CSplashContext.h" />
+    <ClInclude Include="Include\CSystem.h" />
+    <ClInclude Include="Include\CTitleContext.h" />
+    <ClInclude Include="Include\CVideo.h" />
+    <ClInclude Include="Include\CWorkspace.h" />
+    <ClInclude Include="Include\Doc.h" />
+    <ClInclude Include="Include\EElementAlign.h" />
+    <ClInclude Include="Include\EElementPosition.h" />
+    <ClInclude Include="Include\EGUIEditorControl.h" />
+    <ClInclude Include="Include\EGUIEditorFunction.h" />
+    <ClInclude Include="Include\EGUIEditorMode.h" />
+    <ClInclude Include="Include\EGUIEditorTransform.h" />
+    <ClInclude Include="Include\EGUIEditorViewportControl.h" />
+    <ClInclude Include="Include\EGUITitleControl.h" />
+    <ClInclude Include="Include\EMousePickFlag.h" />
+    <ClInclude Include="Include\EPathLocation.h" />
+    <ClInclude Include="Include\ESplashElementType.h" />
+    <ClInclude Include="Include\ESplashStatus.h" />
+    <ClInclude Include="Include\ETitleElementType.h" />
+    <ClInclude Include="Include\SAudioConfig.h" />
+    <ClInclude Include="Include\SConfigElement.h" />
+    <ClInclude Include="Include\SContextElement.h" />
+    <ClInclude Include="Include\SGameDevices.h" />
+    <ClInclude Include="Include\SGUIEditorElements.h" />
+    <ClInclude Include="Include\SGUIEditorInfoElements.h" />
+    <ClInclude Include="Include\SGUIEditorLightElement.h" />
+    <ClInclude Include="Include\SGUIEditorViewportElements.h" />
+    <ClInclude Include="Include\SGUITitleElements.h" />
+    <ClInclude Include="Include\SSplashElement.h" />
+    <ClInclude Include="Include\SThreadData.h" />
+    <ClInclude Include="Include\STitleElement.h" />
+    <ClInclude Include="Include\SVideoConfig.h" />
+    <ClInclude Include="Include\SVideoMode.h" />
+    <ClInclude Include="Include\Tornado.h" />
+    <ClInclude Include="Include\Types.h" />
+    <ClInclude Include="Include\Version.h" />
+    <ClInclude Include="Include\XEffects\CScreenQuad.h" />
+    <ClInclude Include="Include\XEffects\CShaderPre.h" />
+    <ClInclude Include="Include\XEffects\DepthShaderCB.h" />
+    <ClInclude Include="Include\XEffects\EffectHandler.h" />
+    <ClInclude Include="Include\XEffects\EffectShaders.h" />
+    <ClInclude Include="Include\XEffects\ScreenQuadCB.h" />
+    <ClInclude Include="Include\XEffects\ShadowShaderCB.h" />
+    <ClInclude Include="Include\XEffects\SShadowLight.h" />
+    <ClInclude Include="Include\XEffects\XEffects.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CAudio.cpp" />
+    <ClCompile Include="Source\CAudioManager.cpp" />
+    <ClCompile Include="Source\CClock.cpp" />
+    <ClCompile Include="Source\CConfig.cpp" />
+    <ClCompile Include="Source\CContext.cpp" />
+    <ClCompile Include="Source\CEffects.cpp" />
+    <ClCompile Include="Source\CErrorContext.cpp" />
+    <ClCompile Include="Source\CEventReceiver.cpp" />
+    <ClCompile Include="Source\CGame.cpp" />
+    <ClCompile Include="Source\CGUIEnvironment.cpp" />
+    <ClCompile Include="Source\CMachine.cpp" />
+    <ClCompile Include="Source\CSceneManager.cpp" />
+    <ClCompile Include="Source\CScrollParallaxNode.cpp" />
+    <ClCompile Include="Source\CSplashContext.cpp" />
+    <ClCompile Include="Source\CTitleContext.cpp" />
+    <ClCompile Include="Source\CVideo.cpp" />
+    <ClCompile Include="Source\CWorkspace.cpp" />
+    <ClCompile Include="Source\XEffects\CScreenQuad.cpp" />
+    <ClCompile Include="Source\XEffects\CShaderPre.cpp" />
+    <ClCompile Include="Source\XEffects\EffectHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Irrlicht\source\Irrlicht\Irrlicht9.0.vcxproj">
+      <Project>{e08e042a-6c45-411b-92be-3cc31331019f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

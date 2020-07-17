@@ -1,0 +1,23 @@
+﻿==[0.4 Milestone 3]=================================================================
+[svn201]
+- Interfaz básica con toolbar, context menu y windows
+
+==[0.3 Milestone 2]=================================================================
+[svn193]
+- Cambio de Contextos simple
+
+[svn188]
+- Máquina de Contexto funcionando para un contexto
+- Redirección de Eventos a Contexto implementado
+- Acceso a Dispositivos via contexto implementado
+
+[svn176]
+- Inicialización de Máquina de Contexto con clase CGame
+- Comunicación con Contextos y Búsqueda dinámica
+
+==[0.1 Milestone 1]=================================================================
+- Inicialización de Video, Audio y World
+- Inicialización de SceneManager, AudioManager, GUIEnvironment, EventReceiver
+- Configuración por Defecto de Video y Audio
+- Funciones de sistema programadas para Linux y Windows.
+- [Windows] Lectura y Escritura de configuración en archivo INI.

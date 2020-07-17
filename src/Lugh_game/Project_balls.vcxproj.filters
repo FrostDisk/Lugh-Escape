@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{1fc1c90d-9cd1-4f84-b5fe-31eac4a3708e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{f81625a2-2879-4001-ad66-5ccf145aabd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{09e49400-a23a-4ab9-9dd9-5c2dc4880e66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Balls_ContextCredits.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_ContextMain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_ContextScoreboard.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_ContextSplash.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_ContextTitle.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_ContextTrophies.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_Game.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_Matrix.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_Scoreboard.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Balls_TrophiesManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Balls.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Achievement.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_BlockDirection.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_BlockElement.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Constants.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ContextCredits.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ContextMain.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Contexts.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ContextScoreboard.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ContextSplash.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ContextTitle.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ContextTrophies.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Flags.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Game.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_GUIControl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Matrix.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_MoveDirection.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Scoreboard.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_ScoreData.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Status.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Structs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_TrophiesManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_TrophyType.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Balls_Version.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Balls.ico">
+      <Filter>Core</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Balls.rc">
+      <Filter>Core</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

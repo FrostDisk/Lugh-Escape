@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4544b155-7c90-4398-92de-3125098c009a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{2686ccc2-3eba-49b8-a2c9-580542ef4f4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\XEffects">
+      <UniqueIdentifier>{bc13454c-1a8e-4697-9f1c-6b092607d13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Contexts">
+      <UniqueIdentifier>{763e64dc-30c0-4f6c-b504-ad3470339492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{3ef4375e-62bc-49bd-89dd-518bf3ba2eff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\XEffects">
+      <UniqueIdentifier>{57d68f1f-85c1-471d-ba1b-9548d7daf4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Contexts">
+      <UniqueIdentifier>{9f728c01-fdd3-430e-b340-9a3c0685217e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CHANGELOG.txt">
+      <Filter>Core</Filter>
+    </Text>
+    <Text Include="CREDITS.txt">
+      <Filter>Core</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tornado.ini">
+      <Filter>Core</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Tornado.rc">
+      <Filter>Core</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\CAudio.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CAudioManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CClock.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CConfig.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CContext.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CEffects.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CEventReceiver.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CGame.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CGUIEnvironment.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CMachine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CMath.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Constants.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\COutput.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CSceneManager.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CSystem.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CVideo.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CWorkspace.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Doc.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EElementAlign.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EElementPosition.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EPathLocation.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SAudioConfig.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SConfigElement.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SContextElement.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SGameDevices.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SThreadData.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SVideoConfig.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SVideoMode.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Tornado.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Version.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\CScreenQuad.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\CShaderPre.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\DepthShaderCB.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\EffectHandler.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\EffectShaders.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\ScreenQuadCB.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\ShadowShaderCB.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\SShadowLight.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XEffects\XEffects.h">
+      <Filter>Include\XEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CErrorContext.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CScrollParallaxNode.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CSplashContext.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\CTitleContext.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EGUIEditorControl.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EGUIEditorFunction.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EGUIEditorMode.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EGUIEditorTransform.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EGUIEditorViewportControl.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EGUITitleControl.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\EMousePickFlag.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ESplashElementType.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ESplashStatus.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ETitleElementType.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SGUIEditorElements.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SGUIEditorInfoElements.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SGUIEditorLightElement.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SGUIEditorViewportElements.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SGUITitleElements.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SSplashElement.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\STitleElement.h">
+      <Filter>Include\Contexts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\CAudio.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CAudioManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CClock.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CConfig.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CContext.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CEffects.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CEventReceiver.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGame.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CGUIEnvironment.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CMachine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSceneManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CVideo.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CWorkspace.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XEffects\CScreenQuad.cpp">
+      <Filter>Source\XEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XEffects\CShaderPre.cpp">
+      <Filter>Source\XEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XEffects\EffectHandler.cpp">
+      <Filter>Source\XEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CErrorContext.cpp">
+      <Filter>Source\Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CScrollParallaxNode.cpp">
+      <Filter>Source\Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CSplashContext.cpp">
+      <Filter>Source\Contexts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CTitleContext.cpp">
+      <Filter>Source\Contexts</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

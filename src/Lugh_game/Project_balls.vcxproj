@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Lugh_Escape</ProjectName>
+    <ProjectGuid>{842C9772-DCC8-48F8-9AF1-8927F8B6474B}</ProjectGuid>
+    <RootNamespace>Lugh_Escape</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <LinkDelaySign>false</LinkDelaySign>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>.obj\$(Configuration)\BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Tornado_engine\Include;..\Irrlicht\include;$(AUDIERE_HOME)\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;DEBUG_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;irrlicht_d.lib;audiere.lib;tornado_d.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin\$(Configuration)\Lugh_d.exe</OutputFile>
+      <Version />
+      <AdditionalLibraryDirectories>..\Tornado_engine\Bin\$(Configuration);..\Irrlicht\lib\Win32-visualstudio;$(AUDIERE_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /V /Y "$(TargetPath)" "$(SolutionDir)Binaries"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <BuildLog>
+      <Path>.obj\$(Configuration)\BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\Tornado_engine\Include;..\Irrlicht\include;$(AUDIERE_HOME)\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>shlwapi.lib;irrlicht.lib;audiere.lib;tornado.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin\$(Configuration)\Lugh.exe</OutputFile>
+      <Version />
+      <AdditionalLibraryDirectories>..\Tornado_engine\Bin\$(Configuration);..\Irrlicht\lib\Win32-visualstudio;$(AUDIERE_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <LinkTimeCodeGeneration />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>NotSet</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /V /Y "$(TargetPath)" "$(SolutionDir)Binaries"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Balls_ContextCredits.cpp" />
+    <ClCompile Include="Source\Balls_ContextMain.cpp" />
+    <ClCompile Include="Source\Balls_ContextScoreboard.cpp" />
+    <ClCompile Include="Source\Balls_ContextSplash.cpp" />
+    <ClCompile Include="Source\Balls_ContextTitle.cpp" />
+    <ClCompile Include="Source\Balls_ContextTrophies.cpp" />
+    <ClCompile Include="Source\Balls_Game.cpp" />
+    <ClCompile Include="Source\Balls_Matrix.cpp" />
+    <ClCompile Include="Source\Balls_Scoreboard.cpp" />
+    <ClCompile Include="Source\Balls_TrophiesManager.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Balls.h" />
+    <ClInclude Include="Include\Balls_Achievement.h" />
+    <ClInclude Include="Include\Balls_BlockDirection.h" />
+    <ClInclude Include="Include\Balls_BlockElement.h" />
+    <ClInclude Include="Include\Balls_Constants.h" />
+    <ClInclude Include="Include\Balls_ContextCredits.h" />
+    <ClInclude Include="Include\Balls_ContextMain.h" />
+    <ClInclude Include="Include\Balls_Contexts.h" />
+    <ClInclude Include="Include\Balls_ContextScoreboard.h" />
+    <ClInclude Include="Include\Balls_ContextSplash.h" />
+    <ClInclude Include="Include\Balls_ContextTitle.h" />
+    <ClInclude Include="Include\Balls_ContextTrophies.h" />
+    <ClInclude Include="Include\Balls_Flags.h" />
+    <ClInclude Include="Include\Balls_Game.h" />
+    <ClInclude Include="Include\Balls_GUIControl.h" />
+    <ClInclude Include="Include\Balls_Matrix.h" />
+    <ClInclude Include="Include\Balls_MoveDirection.h" />
+    <ClInclude Include="Include\Balls_Scoreboard.h" />
+    <ClInclude Include="Include\Balls_ScoreData.h" />
+    <ClInclude Include="Include\Balls_Status.h" />
+    <ClInclude Include="Include\Balls_Structs.h" />
+    <ClInclude Include="Include\Balls_TrophiesManager.h" />
+    <ClInclude Include="Include\Balls_TrophyType.h" />
+    <ClInclude Include="Include\Balls_Version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Balls.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Balls.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tornado_engine\Tornado.vcxproj">
+      <Project>{ec9a21e9-18dc-4636-8998-471432802f53}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
